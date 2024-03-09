@@ -44,7 +44,7 @@ function Navbar() {
                     const githubUrl = `https://api.github.com/users/${login}`;
                     const response = await fetch(githubUrl);
                     if (!response.ok) {
-                        throw new Error("User not found"); // Throw an error when user not found
+                        throw new Error("User not found");
                     }
                     return response.json();
                 } catch (error) {
