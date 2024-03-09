@@ -1,0 +1,170 @@
+.App-logo {
+	width: 100%; /* Adjust the width as needed */
+	height: 100%; /* Maintain aspect ratio */
+}
+
+.navbar {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	background-color: transparent;
+}
+
+.nav-link {
+	color: grey !important;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.nav-link.active {
+	color: white !important;
+}
+
+.nav-link:hover {
+	color: white !important;
+}
+
+.navbar-toggler {
+	border-color: white !important; /* Set the border color to white */
+}
+
+.navbar-toggler-icon {
+	color: white !important;
+}
+
+.nav-link.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(15%);
+	width: 2%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-slot.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(8%);
+	width: 4%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-live.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(15%);
+	width: 4%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-sports.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(15%);
+	width: 5%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-mini.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(7%);
+	width: 4%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-lottery.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(4%);
+	width: 3%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-events.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(10%);
+	width: 6%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.nav-link-customer.active::before {
+	content: "";
+	position: absolute;
+	top: 1px; /* Adjust the position of the underline */
+	left: 1;
+	transform: translateX(5%);
+	width: 4%; /* Adjust the width of the underline */
+	height: 5px; /* Thickness of the underline */
+	background-color: red; /* Color of the underline */
+}
+
+.custom-swal-popup {
+	background-color: #181623 !important; /* Set background color */
+	color: white !important; /* Set text color */
+}
+
+.custom-swal-confirm-button {
+	background-color: grey !important; /* Set button background color */
+	color: white !important; /* Set button text color */
+	border: none !important; /* Remove button border */
+}
+.custom-swal-cancel-button {
+	background-color: red !important; /* Set button background color */
+	color: white !important; /* Set button text color */
+	border: none !important; /* Remove button border */
+}
+
+.custom-swal-confirm-button:hover {
+	background-color: darkgrey !important; /* Set button hover background color */
+}
+.custom-swal-cancel-button:hover {
+	background-color: darkred !important; /* Set button hover background color */
+}
+
+.swal2-input {
+	color: white !important; /* Set input text color */
+	border: 1px solid white !important; /* Set input border */
+}
+
+.custom-swal-popup {
+	background-color: #181623 !important; /* Set background color */
+	color: white !important; /* Set text color */
+}
+
+.custom-swal-confirm-button:hover {
+	background-color: darkgrey !important; /* Set button hover background color */
+}
+.custom-swal-cancel-button:hover {
+	background-color: darkred !important; /* Set button hover background color */
+}
+
+.custom-swal-title {
+	color: white !important; /* Set title text color */
+}
+
+.custom-swal-image {
+	border-radius: 50%; /* Make the image rounded */
+	width: 300px; /* Set the width of the image */
+	height: 300px; /* Set the height of the image */
+}
+
