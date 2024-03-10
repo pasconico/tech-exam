@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
 function Navbar() {
+
     const [activeLink, setActiveLink] = useState(null);
 
     const handleClick = (link) => {
@@ -81,9 +81,12 @@ function Navbar() {
             });
     };
 
+
+    
+
     return (
         <React.Fragment>
-            <nav className="navbar navbar-expand-lg fixed-top">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <Link to="/" className="navbar-brand">
                         <img src={"logo.png"} className="App-logo" alt="logo" />
@@ -189,7 +192,7 @@ function Navbar() {
                         <div className="navbar-nav ms-auto">
                             <button
                                 onClick={logInHandleClick}
-                                className="btn btn-outline-secondary square-btn text-light"
+                                className="login btn btn-outline-secondary square-btn text-light"
                             >
                                 LOGIN
                             </button>

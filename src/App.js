@@ -36,30 +36,27 @@ function App() {
   return (
 
     <div className="App">
-      <Headroom>
-        <Navbar />
-      </Headroom>
       <header className="App-header">
+        <Navbar />
         <img src={"main-banner.jpg"} className="App-logo" alt="logo" />
-        <div className='container'>
+        <div className='container text-center'>
           <button onClick={claimHandleClick} className='btn btn-danger claim-now mb-1'><small>CLAIM NOW</small></button>
         </div>
-        <div className='container mt-3'>
-          <div className='jackpot-container'>
-            <img src={"jackpot.png"} className="App-logo jackpot" alt="logo" />
-          </div>
-          <div className='title-container'>
-            <img src={"title-jackpot.png"} className="App-logo title-jackpot" alt="logo" />
-          </div>
-          <div className='odometer-container'>
-            <img src={"odometer.png"} className="App-logo jackpot title-odometer" alt="logo" />
-          </div>
-        </div>
       </header >
-
+      <div className='container mt-3'>
+        <div className='jackpot-container'>
+          <img src={"jackpot.png"} className="App-logo jackpot" alt="logo" />
+        </div>
+        <div className='title-container'>
+          <img src={"title-jackpot.png"} className="App-logo title-jackpot" alt="logo" />
+        </div>
+        <div className='odometer-container'>
+          <img src={"odometer.png"} className="App-logo jackpot title-odometer" alt="logo" />
+        </div>
+      </div>
 
       <div className='container card-container game-list'>
-        <h2 className='mt-5'>Game List</h2>
+        <h2 className='mt-4'>Game List</h2>
 
         <div className='row'>
           <div className='col-lg-6 mt-3'>
@@ -144,8 +141,11 @@ function App() {
       </div>
 
       <div className='container exclusive-promotion'>
-        <h2 className='mt-5'>Exclusive Promotion</h2>
-        <div className='row mt-3'>
+        <div className="d-flex justify-content-between align-items-center mt-4">
+          <h2>Exclusive Promotion</h2>
+          <h6 className='text-light'><Link to="/" onClick={handleClick} className='view-more text-white'> <small>View More</small></Link></h6>
+        </div>
+        <div className='row'>
           <div className='col-md-3 mt-3'>
             <img src={"promo-1.jpg"} className="App-logo" alt="promo-1" />
           </div>
@@ -163,7 +163,7 @@ function App() {
 
       <footer>
         <div className='container game-service-provider'>
-          <h2 className='mt-5'>Game Service Provider</h2>
+          <h2 className='mt-4'>Game Service Provider</h2>
           <img src={"footer.png"} className="App-logo jackpot mt-3" alt="footer" />
         </div>
         <div className='App-footer'>
